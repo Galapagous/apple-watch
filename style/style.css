@@ -1,0 +1,298 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+body img {
+  width: 50px;
+  height: 50px;
+}
+header {
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+header a {
+  color: white;
+}
+
+/* -----------------------------------Menu-bar design-------------------------------------- */
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  margin: 10px 0px;
+  /* width: 100vw; */
+  height: auto;
+}
+.menu-bar .left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.menu-bar .left-side img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.menu-bar .left-side a {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-bar .left-side a:hover {
+  color: rgb(94, 94, 245);
+}
+.menu-bar .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+}
+.menu-bar .right-side img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.menu-bar .right-side img:nth-child(4) {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.menu-bar .right-side .ques {
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+}
+/* -------------------------------------Advert Section------------------------------------- */
+.advert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid crimson; */
+  margin: 20px 0px;
+  padding: 0px 20px;
+  position: sticky;
+  z-index: 20;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+.advert .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.advert .left h1 {
+  font-size: 1.5rem;
+}
+.advert .left a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: rgb(82, 79, 79);
+  background-color: rgb(218, 218, 228);
+  border-radius: 15px;
+  padding: 7px 10px;
+}
+.advert .left .advert-link {
+  display: flex;
+  gap: 10px;
+}
+.advert .advert-link a:nth-child(1) {
+  border: 1px solid blue;
+  background-color: rgb(198, 219, 252);
+  color: darkblue;
+}
+.advert .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.advert .right h1 {
+  font-size: 0.9rem;
+}
+.advert .right h2 {
+  font-size: 0.7rem;
+  text-align: right;
+}
+.advert .right button {
+  width: 130px;
+  height: 65px;
+  margin-left: 20px;
+  font-weight: 500px;
+  background-color: rgb(69, 150, 226);
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* ---------------------------------------------Black Friday section--------------------------------- */
+.black-friday {
+  width: 100%vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  height: 45px;
+}
+.black-friday h1 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.black-friday img {
+  width: 35px;
+  height: 35px;
+}
+.black-friday span {
+  position: absolute;
+  left: 40%;
+  font-weight: 600;
+  color: black;
+}
+
+/* -------------------------------------------Main Page design------------------------------------------------ */
+.main-Page {
+  background-color: rgb(253, 246, 237);
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.main-Page .text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+.main-Page .text span {
+  width: 500px;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.main-Page .text button {
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid rgb(71, 88, 39);
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(70, 69, 69);
+}
+.main-Page .text button:hover {
+  background-color: gray;
+  border: gray;
+  color: white;
+}
+.main-Page .image-container {
+  position: absolute;
+  /* border: 1px solid crimson; */
+  right: 0%;
+  top: 0%;
+  width: 600px;
+  height: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid crimson; */
+}
+.main-Page .image-container img {
+  object-fit: cover;
+  width: 600px;
+  height: 600px;
+  margin-bottom: 300px;
+  transform: translateX(50%);
+}
+.main-Page .scroll {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: 4;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.main-Page .scroll .scroll-buttons {
+  /* border: 1px solid blue; */
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+}
+.main-Page .scroll .scroll-buttons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.main-Page .scroll .scroll-buttons span {
+  color: grey;
+  font-weight: 550;
+  font-size: 1rem;
+}
+.D-page a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: rgb(69, 150, 226);
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  position: absolute;
+  right: -40%;
+  text-decoration: none;
+}
+.D-page a:hover {
+  background-color: rgb(69, 150, 226);
+  color: white;
+  width: 45px;
+  height: 45px;
+}
+/* -------------------------------------------------------Footer Design--------------------------------------------------- */
+footer {
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  border-radius: 10px 0px 20px 0px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  font-size: 0.7rem;
+}
